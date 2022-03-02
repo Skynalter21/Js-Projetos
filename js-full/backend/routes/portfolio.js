@@ -23,6 +23,7 @@ router.post('/', (req, res) => {
             })
         })
         .catch((err) => {
+            console.log(err);
             res.json({
                 sucess: false,
                 message: err
